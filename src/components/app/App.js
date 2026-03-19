@@ -9,9 +9,11 @@ const App = () => {
     return (
         <>
             <h1>{counter}</h1>
-            <button onClick={() => dispatch(increment())}>+</button>
-            <button onClick={() => dispatch(decrement())}>-</button>
-            <button onClick={() => dispatch(random(rnd))}>rnd</button>
+            <div className="btn-group" role="group" aria-label="Basic example">
+                <button className="btn btn-primary" onClick={() => dispatch(increment())}>+</button>
+                <button className="btn btn-primary" onClick={() => dispatch(decrement())}>-</button>
+                <button className="btn btn-primary" onClick={() => dispatch(random(rnd))}>rnd</button>
+            </div>
         </>
     )
 }
